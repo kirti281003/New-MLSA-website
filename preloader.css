@@ -395,7 +395,7 @@ footer {
 }
 
 .col {
-  flex-basis: 25%;
+  /* flex-basis: 25%; */
   padding: 10px;
 }
 
