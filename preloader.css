@@ -204,6 +204,11 @@
   align-content: center;
   flex-direction: column;
 }
+.fullnavitem:hover{
+  color:#001d42;
+  text-decoration: underline;
+  transform: scale(1.1);
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -267,7 +272,6 @@ visibility: hidden;
   .navname2{
     visibility: visible;
 /*    margin-right: 10px;*/
-
   }
 
 .navbody{
