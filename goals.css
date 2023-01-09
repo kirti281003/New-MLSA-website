@@ -27,7 +27,7 @@ body {
 	animation-fill-mode: forwards;
   background-color: white;
   height: 130px;
-  width:330px;
+  width:334px;
 }
 
 .card-wrapper:hover {
@@ -49,7 +49,7 @@ body {
 }
 
 .card-content h4 {
-  padding: 8px 8px 8px 8px;
+  padding: 8px 0px ;
   font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", sans-serif;
 font-size: 18px;
 font-weight: 600;
@@ -64,8 +64,10 @@ font-size: 13px;
 font-weight: 400;
 color: rgb(51, 51, 51);
 display: block;
-line-height: 17px;
+line-height: 18px;
+padding-right: 20px;
 }
+
 
 @keyframes scale{
 	0%{

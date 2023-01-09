@@ -14,7 +14,7 @@ body{
     background-color: #f2f2f2;
 }*/
 .card_team{
-    position: relative;
+    /* position: relative; */
     background-color: #fff;
     border-radius: 20px;
     height: 460px;
@@ -104,6 +104,14 @@ section .card_team .image img{
     background: linear-gradient(106.32deg, #007bff 14.23%,
     rgba(255, 25, 25, 0) 139.97%);
 }
+.box7_t{
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg, #007bff 14.23%,
+    rgba(255, 25, 25, 0) 139.97%);
+}
 .card_team .media-icons{
     position: absolute;
     top: 10px;
@@ -150,6 +158,7 @@ section .card_team .about{
     color: #444;
     margin-top: 45px;
     margin-bottom: 5px; 
+    font-size: 1.4rem;
 }
 .card_team .button{
     width: 100%;
@@ -189,4 +198,10 @@ section .card_team .about{
 .swiper-button-next:hover, .swiper-button-prev:hover{
     opacity: 1;
     color: #007bff;
+}
+@media(max-width:1024px)
+{
+    .swiper{
+        width:300px;
+    }
 }

@@ -85,7 +85,7 @@
   z-index: 998;
   top: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: #305891;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -93,16 +93,18 @@
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 70px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  font-size:30px;
+  text-decoration: underline;
+  color:white;
 }
 
 .sidenav .closebtn {
@@ -130,8 +132,10 @@
   cursor:pointer;
   z-index:998;
   position: fixed;
-  top:5px;
+  top:4vh;
+  transform: translate(-50%,-50%);
   right:5%;
+  visibility: hidden;
 
 
 
@@ -145,13 +149,20 @@
   align-content: center;
   display: flex;
   flex-direction: row;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid lightgrey;
 /*  flex-wrap: wrap;*/
   
 }
 .navlogo{
-  height: 35px;
-  width: 35px;
-  margin-left: 20px;
+  height:6rem;
+  width: 6rem;
+  top:4vh;
+  transform: translate(-50%,-50%);
+  margin-left: 40px;
+  position: fixed;
+  z-index: 10;
 }
 .logo_name{
 /*  right: 60px;*/
@@ -163,9 +174,11 @@
 .navname1{
   position: fixed;
   right:7% ;
-  top:15px;
-  margin-right:10px;
+  top:4vh;
+  transform: translate(0%,-50%);
+  margin-right:30px;
   font-weight: 600;
+  font-size: large;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -174,9 +187,11 @@
   visibility: hidden;
   position: fixed;
   right:10% ;
-  top:15px;
-  margin-right:10px;
+  top:4vh;
+  transform: translate(0%,-50%);
+  margin-right:30px;
   font-weight: 700;
+  font-size:medium;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -185,7 +200,7 @@
 
 .navitems{
   display: flex;
-  align-items: center;
+  align-items: left;
   align-content: center;
   flex-direction: column;
 }
@@ -195,10 +210,59 @@
   .sidenav a {font-size: 18px;}
 }
 
+.fullnavul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  width: 100vw;
+  height: 8vh;
+  /* margin-right: 150px; */
+  padding-right: 70px;
+  display: flex;
+  justify-content: flex-end;
+  /* position:fixed; */
+  /* flex-direction: row-reverse; */
+}
+
+/* .fullnavul li:first-child {
+  border-right:1px solid #bbb;
+  height: 8vh;
+} */
+
+.fullnavul li:last-child {
+  border-right: none;
+}
+
+.fullnavul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: large;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
+}
+
+.fullnavul li a:hover:not(.active) {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 600px){
   .navname1{
 
 visibility: hidden;
+  }
+  .fullnav{
+    visibility: hidden;
+  }
+  .navButton{
+    visibility: visible;
   }
   .navname2{
     visibility: visible;
@@ -242,7 +306,7 @@ visibility: hidden;
     width: 30px;
     height: 30px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
 /*    line-height: 60px;*/
     text-align: center;
@@ -265,11 +329,22 @@ visibility: hidden;
     
     transition:all linear 0.2s ;
 }*/
-.facebook {background-color: #305891;
+.facebook {background-color: #0077b5;
  
 }
+.linkedin{
+  background-color: #0077b5;
+}
+.gplus{
+  
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
 .twitter {background-color: #3AAFD6;}
-.gplus {background-color: #F8694D; }
+/* .gplus {background-color: #F8694D; } */
 .print {background-color: #7CB0A4;}
 /*.sm-collapse{left: -60px; }*/
 
@@ -325,9 +400,11 @@ footer {
   flex-basis: 15%;
 }
 
+
 .logo {
   width: 100px;
   margin-bottom: 100px;
+  margin-left:3rem;
 }
 
 .col h3 {
@@ -416,6 +493,7 @@ hr {
 
 .copyright {
   text-align: center;
+  color:white;
 }
 
 .underline {
@@ -440,6 +518,7 @@ hr {
   animation: moving 2s linear infinite;
 }
 
+
 @keyframes moving {
   0% {
     left: -20px;
@@ -453,11 +532,29 @@ hr {
   footer {
     bottom: unset;
   }
-  .col {
+  /* .col {
     flex-basis: 100%;
-  }
+  } */
 
   .col:nth-child(2), .col:nth-child(3) {
     flex-basis: 100%;
   }
+  .row{
+    padding-left:5rem;
+  }
+}
+@media(max-width:1024px)
+{
+  .navlogo{
+    height:4rem;
+    width:4rem;
+    top:3.5vh;
+  }
+ .logo{
+  margin-left:-3rem;
+  margin-bottom:0rem;;
+ }
+ .col h3{
+  margin-bottom:1rem;
+ }
 }
