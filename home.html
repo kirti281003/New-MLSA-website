@@ -67,7 +67,46 @@
   </div> 
 </div>  -->
   <!-- home page end -->
-  <script>
+  <div class="popup">
+    <div class="popup-content">
+        <h1>X</h1>
+
+
+
+        <div >
+            <div >
+                <h2>THE HACK RETURNS!</h2>
+                <div style="
+                object-fit:cover;
+               
+               "><img src="NSUT_MSC_Event.jpg" alt="" style=" object-fit:cover;
+               width: 100%;" ></div>
+                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae ipsa itaque corporis
+                       </p> -->
+                <div class="action">
+                  <a href="modal2event.html"> <button class="btn__purple">Read More</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- <h2>Subscribe...</h2>
+        <p>And some dummy content that shows on this popup Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, ratione quisquam iure libero impedit aspernatur, expedita quaerat mollitia delectus, eius ad excepturi inventore aperiam perspiciatis voluptatum porro. Tenetur libero, aspernatur nobis quod autem assumenda, nostrum esse reiciendis quibusdam vitae iure harum illum similique consectetur ut ipsam, at repellendus! Nulla est debitis illo.</p>
+    -->
+    </div>
+</div>
+
+<script>
+    const popup = document.querySelector('.popup');
+    const x = document.querySelector('.popup-content h1')
+
+    window.addEventListener('load', () => {
+        popup.classList.add('showPopup');
+        popup.childNodes[1].classList.add('showPopup');
+    })
+    x.addEventListener('click', () => {
+        popup.classList.remove('showPopup');
+        popup.childNodes[1].classList.remove('showPopup');
+    })
+
     AOS.init();
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
