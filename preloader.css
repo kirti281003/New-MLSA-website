@@ -667,3 +667,10 @@ body {
   transform: translateY(0);
   pointer-events: all;
 }
+.marquee{
+  padding-top: 6rem;
+  font-size: 3rem;
+}
+.marquee Marquee a{
+  color:black;
+}
